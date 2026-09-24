@@ -1,4 +1,5 @@
 public class Ticket {
+    // Ticket variables
     private int id;
     private Event event;
     private TicketType ticketType;
@@ -21,6 +22,7 @@ public class Ticket {
             throw new IllegalArgumentException("Student Name cannot be empty.");
         }
 
+        // sets values now that weve checked invariants
         this.id = id;
         this.event = event;
         this.ticketType = ticketType;
@@ -31,28 +33,27 @@ public class Ticket {
         this.admitted = false;
     }
 
+    // admit function 
     public boolean admit() {
         if (!isActive()) {
             return false;
-        } else if (admitted) {
-            throw new IllegalArgumentException("Ticket cannot be admitted more than once.");
         }
 
         admitted = true;
         return true;
     }
 
+    // cancel function
     public boolean cancel() {
         if (!isActive()) {
             return false;
-        } else if (canceled) {
-            throw new IllegalArgumentException("Ticket cannot be canceled more than once.");
         }
 
         canceled = true;
         return true;
     }
 
+    // checks if ticket is active canceled or admitted
     public boolean isActive() {
         return !canceled && !admitted;
     }
@@ -82,7 +83,7 @@ public class Ticket {
         return studentName;
     }
 
-    // string
+    // string override
     @Override
     public String toString() {
         String status;
