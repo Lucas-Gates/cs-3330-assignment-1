@@ -1,4 +1,5 @@
 public final class TicketType {
+    // immutable TicketType variables
     private final String name;
     private final double price;
 
@@ -11,6 +12,7 @@ public final class TicketType {
             throw new IllegalArgumentException("Price shouldn't be less 0.");
         }
 
+        // sets values now that weve checked invariants
         this.name = name;
         this.price = price;
     }
