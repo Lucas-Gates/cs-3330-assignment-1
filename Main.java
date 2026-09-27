@@ -16,6 +16,14 @@
 
 Public class Main {
     public static void main(String[] args) {
+        // creating events first, accesses the event.java file
+        // event parameters = string name, string location
+        Event event1 = new Event("Object Oriented Programming", "Room 106");
+        Event event2 = new Event("Intro Computer Science", "Room 107");
+
+
+        // creating 2 ticket types, accessing tickettype.java file
+        // parameters = string name, double price
 
 
 
