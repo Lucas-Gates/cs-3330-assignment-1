@@ -9,5 +9,7 @@ It tracks the event and location, the type of ticket, and handles storing ticket
 
 #### IDE used: 
 Dilia- IntelliJ IDEA
-Lucas-
+
+Lucas- Visual Studio Code
+
 Cody-
