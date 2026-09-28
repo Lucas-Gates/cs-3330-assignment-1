@@ -13,3 +13,7 @@ Dilia- IntelliJ IDEA
 Lucas- Visual Studio Code
 
 Cody- Visual Studio Code
+
+
+### github link:
+https://github.com/Lucas-Gates/cs-3330-assignment-1.git 
